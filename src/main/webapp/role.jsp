@@ -9,7 +9,10 @@
 </head>
 <body>
 <div class="container mt-4">
-    <h2>Roles Table</h2>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Roles Table</h2>
+        <button class="btn btn-success" id="btn-add">Add Role</button>
+    </div>
     <table class="table table-bordered">
         <thead>
         <tr>
@@ -56,6 +59,13 @@
     <%--Thêm JQuery--%>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="role.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#btn-add').click(function() {
+                window.location.href = 'addRole.jsp';
+            });
+        });
+    </script>
 </div>
 </body>
 </html>
